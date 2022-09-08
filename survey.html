@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>CuW</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#" onclick="rsvp()">RSVP</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Page content-->
+    <div class="alert alert-info collapse text-center" role="alert" id="rsvp" onclick="rsvpok()">
+      Das wird ein schöner Tag mit Konstanze, Anja und Stefan.
+    </div>
+    <div class="container">
+      <div class="text-center w-85 mt-5 mx-auto">
+        <h1>Claus &amp; Wladimir</h1>
+        <p class="lead mb-0 mt-3">Ihr habt geheiratet – das ist großartig fabelhaft!</p>
+        <p class="lead mb-0 mt-1">Ihr habt uns eigeladen – darüber freuen wir uns sehr!</p>
+        <p class="lead mb-0 mt-1">Ihr habt euch Spenden gewünscht – das machen wir!</p>
+        <p class="lead mb-3 mt-1">Wir haben gefeiert – das war toll!</p>
+      </div>
+    </div>
+    <form class="mt-2 mb-4 w-75 mx-auto rounded" id="surveyform"> <!--action="url" method="POST">-->
+      <div class="text-center">
+        <h3>Und nun?</h3>
+        <p class="mt-3">
+          Wir wollen Euch als Frischvermählte unbedingt alsbald wiedersehen,
+          daher werdet ihr nun von uns eingeladen und es sind schnelle Kreuze von Euch <strong>gefragt</strong>.
+        </p>
+      </div>
+      <p class="mt-4"><strong>Wann habt ihr Zeit (13 Uhr bis open End)</strong></p>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="date" id="dateRadios1" value="date1">
+          <label class="form-check-label" for="dateRadios1">
+            Mo 03.10.2022
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="date" id="dateRadios2" value="date2">
+          <label class="form-check-label" for="dateRadios2">
+            Sa 08.10.2022
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="date" id="dateRadios3" value="date3">
+          <label class="form-check-label" for="dateRadios3">
+            So 09.10.2022
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="date" id="dateRadios4" value="date4">
+          <label class="form-check-label" for="dateRadios4">
+            Sa 12.11.2022
+          </label>
+        </div>
+      </div>
+      <p class="mt-4"><strong>Als Wegzehrung</strong></p>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="snack" id="snackRadios1" value="snack1">
+          <label class="form-check-label" for="snackRadios1">
+            Brunch
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="snack" id="snackRadios2" value="snack2">
+          <label class="form-check-label" for="snackRadios2">
+            Selbstgemachte Sandwiches
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="snack" id="snackRadios3" value="snack3">
+          <label class="form-check-label" for="snackRadios3">
+            Kaffee &amp; Kuchen
+          </label>
+        </div>
+      </div>
+      <p class="mt-4"><strong>Eine Aktivität</strong></p>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="event" id="eventRadios1" value="event1">
+          <label class="form-check-label" for="eventRadios1">
+            Minigolf / Schwarzlichtgolf
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="event" id="eventRadios2" value="event2">
+          <label class="form-check-label" for="eventRadios2">
+            Boot fahren
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="event" id="eventRadios3" value="event3">
+          <label class="form-check-label" for="eventRadios3">
+            Kegeln
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="event" id="eventRadios4" value="event4">
+          <label class="form-check-label" for="eventRadios4">
+            Museum besuchen
+          </label>
+        </div>
+      </div>
+      <p class="mt-4"><strong>Dinnertime mit</strong></p>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="dinner" id="dinnerRadios1" value="dinner1">
+          <label class="form-check-label" for="dinnerRadios1">
+            Pizza
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="dinner" id="dinnerRadios2" value="dinner2">
+          <label class="form-check-label" for="dinnerRadios2">
+            Döner
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="dinner" id="dinnerRadios3" value="dinner3">
+          <label class="form-check-label" for="dinnerRadios3">
+            Sushi
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="dinner" id="dinnerRadios4" value="dinner4">
+          <label class="form-check-label" for="dinnerRadios4">
+            Pommes &amp; Currywurst
+          </label>
+        </div>
+      </div>
+      <p class="mt-4"><strong>Wahl der Abendgala</strong></p>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gala" id="galaRadios1" value="gala1">
+          <label class="form-check-label" for="galaRadios1">
+            Theater
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gala" id="galaRadios2" value="gala2">
+          <label class="form-check-label" for="galaRadios2">
+            Kino
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gala" id="galaRadios3" value="gala3">
+          <label class="form-check-label" for="galaRadios3">
+            Kabarett / Comedy
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gala" id="galaRadios4" value="gala4">
+          <label class="form-check-label" for="galaRadios4">
+            Lesung / Lesebühne / Poetry Slam
+          </label>
+        </div>
+      </div>
+      <p class="mt-4"><strong>Und als Absacker</strong></p>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="schnaps" id="schnapsRadios1" value="schnaps1">
+          <label class="form-check-label" for="schnapsRadios1">
+            Eckkneipe
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="schnaps" id="schnapsRadios2" value="schnaps2">
+          <label class="form-check-label" for="schnapsRadios2">
+            Bar
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="schnaps" id="schnapsRadios3" value="schnaps3">
+          <label class="form-check-label" for="schnapsRadios3">
+            Späti
+          </label>
+        </div>
+      </div>
+      <p class="mt-4"><strong>Platz für Wünsche oder Grüße</strong></p>
+      <div class="form-group">
+        <textarea class="form-control" name="extra" id="extraTextarea" rows="3" placeholder="Extrawünsche"></textarea>
+      </div>
+      <p class="mt-4">Rückmeldung am besten sofort durch Euch, Details und Organisation durch uns!</p>
+      <button class="mb-4 btn btn-primary pull-right"> <!--type="submit"-->
+        Send
+      </button>
+    </form>
+
+    <!-- Jquery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
